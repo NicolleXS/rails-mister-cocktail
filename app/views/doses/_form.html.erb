@@ -1,17 +1,20 @@
 <div class="container">
-<%= simple_form_for [@cocktail, @dose] do |f| %>
-  <% if @dose.errors.any? %>
-      <div class="errors-container">
-        <ul>
-          <% @dose.errors.full_messages.each do |message| %>
-            <li><%= message %></li>
-          <% end %>
-        </ul>
-      </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-4 col-sm-offset-4">
+    <%= simple_form_for [@cocktail, @dose] do |f| %>
+      <% if @dose.errors.any? %>
+          <div class="errors-container">
+            <ul>
+              <% @dose.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+              <% end %>
+            </ul>
+          </div>
+        <% end %>
+      <%= f.input :description, :label => "Dose description" %>
+      <%= f.select :ingredient_id, Ingredient.all.map { |r| [r.name, r.id]} %>
+      <%= f.submit "Add" %>
     <% end %>
-  <%= f.input :description, :label => "Dose description" %>
-  <%= f.select :ingredient_id, Ingredient.all.map { |r| [r.name, r.id]} %>
-  <%= f.submit "Add" %>
-<% end %>
+    </div>
+  </div>
 </div>
-

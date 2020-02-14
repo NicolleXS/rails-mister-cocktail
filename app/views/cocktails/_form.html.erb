@@ -1,6 +1,11 @@
-
-<%= simple_form_for cocktail do |f| -%>
-  <%= f.input :name %>
-  <%= f.submit class: "btn btn-primary" %>
-  <%= f.input :photo, as: :file %>
-<% end -%>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-4 col-sm-offset-4">
+      <%= simple_form_for cocktail do |f| -%>
+        <%= f.input :name, label: 'Cocktail name' %>
+        <%= f.input :photo, as: :file %>
+        <%= f.submit class: "btn btn-primary" %>
+      <% end -%>
+    </div>
+  </div>
+</div>

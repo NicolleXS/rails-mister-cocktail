@@ -35,16 +35,14 @@ h1 {
   color: white;
   text-align: center;
 }
- .container {
-  height: 100vh;
- }
 
-body {
-  background-size: cover;
-}
+
+
 .banner {
-  length: 100px;
-  background-color: black;
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  background-image: url('https://blog.opentable.com/wp-content/uploads/sites/108/2017/05/Blog-Three_Dots-Credit-Jeff-Marini-copy.jpeg')
 }
 
 .banner h1 {
