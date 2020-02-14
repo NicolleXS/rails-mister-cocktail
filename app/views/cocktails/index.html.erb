@@ -1,11 +1,8 @@
 
 <div class="banner">
-  <div class="container">
-    <h1>Best cocktail-tionary</h1>
-    <p>Share with us your best cocktail recipe!</p>
-    <%= link_to "Create a cocktail", new_cocktail_path, class: "btn btn-flat" %>
-  </div>
+  <div class="container"></div>
 </div>
+<%= link_to "Create a cocktail", new_cocktail_path, class: "btn btn-flat", id: "button" %>
 <div class="container">
   <div class="cards">
     <% @cocktails.each do |cocktail| %>
