@@ -20,7 +20,7 @@
     text-decoration: none;
     color: white;
     &:hover {
-      color: yellow;
+    color: rgb(147, 204, 212)
     }
   }
 }
@@ -56,5 +56,18 @@ img {
 }
 
 body {
-  background-color: rgb(147, 204, 212);
+  background-color: rgb(147, 204, 212)
+}
+
+.cocktails_img {
+  height: 150;
+  width: 200;
+  crop: fill;
+  border-radius: 50px;
+
+}
+
+.containcer {
+  display: flex;
+  flex-direction: column;
 }
